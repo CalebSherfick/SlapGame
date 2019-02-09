@@ -1,5 +1,10 @@
 console.log('start')
 
+//MAKE IT SO HEALTH CAN'T GO BELOW 0
+//MAKE IT SO MODIFIERS ONLY WORK FOR CERTAIN ATTACKS
+
+
+
 
 let target = {
   health: 100,
