@@ -1,20 +1,11 @@
 console.log('start')
 
-//MAKE IT SO HEALTH CAN'T GO BELOW 0
-//MAKE IT SO MODIFIERS ONLY WORK FOR CERTAIN ATTACKS
-
-
-
-
 let target = {
   health: 100,
   hits: 0,
   name: "Tom",
   items: []
 }
-
-
-
 
 //NEED TO CHANGE ONCLICK FUNCTIONS WITH THE BUTTONS
 // function attack(i) {
@@ -35,15 +26,11 @@ let target = {
 //   update()
 // }
 
-
-
-
 var items = {
   glove: { name: 'Glove', modifier: 2, description: 'Was there a brick in that glove?!' },
   knuckles: { name: 'Brass Knuckles', modifier: 3, description: 'POW, right in the kisser!' },
   boot: { name: 'Steeltoed Boot', modifier: 5, description: 'Ouch! That\'s gotta hurt!' }
 }
-
 
 function giveGlove() {
   target.items = []
@@ -70,34 +57,46 @@ function addMods() {
   return modTotal
 }
 
-
-
+function knockout() {
+  if (target.health < 0) {
+    target.health = 0
+  }
+}
 
 function slap() {
-  if (target.health > 0) {
+  if (target.items[0] == items.glove) {
     target.health -= 1 * addMods();
+    target.hits++
+  } else {
+    target.health--;
     target.hits++
   }
   update()
 }
 function punch() {
-  if (target.health > 0) {
+  if (target.items[0] == items.knuckles || target.items[0] == items.glove) {
     target.health -= 5 * addMods();
+    target.hits++
+  } else {
+    target.health -= 5;
     target.hits++
   }
   update()
 }
 function kick() {
-  if (target.health > 0) {
+  if (target.items[0] == items.boot) {
     target.health -= 10 * addMods();
+    target.hits++
+  } else {
+    target.health -= 10;
     target.hits++
   }
   update()
 }
 
-
 function update() {
   document.getElementById("name").innerText = ` ${target.name}`;
+  knockout()
   document.getElementById("health").innerText = ` ${target.health.toString()}`;
   document.getElementById("hits").innerText = ` ${target.hits.toString()}`;
 
