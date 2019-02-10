@@ -2,6 +2,49 @@
   height: 100vh;
 }
 
+.title-bg {
+  background-color: #ff0000;
+  border-radius: 5px;
+  border: solid white 3px;
+  box-shadow: 7px 5px 3px black;
+}
+
+img {
+  max-width: 25em;
+}
+
+.title {
+  padding: 0.2em;
+}
+
+.words{
+  color: white;
+  text-shadow: -3px 3px 5px black;
+}
+
+.stats {
+  font-size: 2.3em;
+}
+
+.back-photo {
+  background-image: url(cartoon-background.webp);
+  background-repeat: none;
+  background-size: cover;
+}
+
 .target {
-  max-width: 200px;
+  max-width: 14em;
+}
+
+.attack-btn {
+  background-color: #f6f291;
+}
+
+.mod-btn {
+  background-color: #71cbf1;
+}
+
+
+.reset-btn {
+  background-color: #ff0000;
 }
