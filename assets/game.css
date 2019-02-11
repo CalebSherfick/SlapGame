@@ -51,6 +51,10 @@ img {
   color: white;
 }
 
+.resetter {
+  max-height: 2em;
+}
+
 .attack-btn {
   background-color: #d6c94f;
 }

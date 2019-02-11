@@ -47,6 +47,12 @@ function giveBoot() {
 function remove() {
   target.items = []
 }
+function reset() {
+  target.items = []
+  target.health = 100
+  target.hits = 0
+  update()
+}
 
 
 function addMods() {
@@ -99,7 +105,6 @@ function update() {
   knockout()
   document.getElementById("health").innerText = ` ${target.health.toString()}`;
   document.getElementById("hits").innerText = ` ${target.hits.toString()}`;
-
 }
 update();
 
