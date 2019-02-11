@@ -4,9 +4,8 @@
 
 .title-bg {
   background-color: #ff0000;
-  border-radius: 5px;
   border: solid white 3px;
-  box-shadow: 7px 5px 3px black;
+  box-shadow: 7px 5px 3px rgb(26, 26, 26);
 }
 
 img {
@@ -20,10 +19,12 @@ img {
 .words{
   color: white;
   text-shadow: -3px 3px 5px black;
+  font-family: 'Palanquin Dark', sans-serif;  
 }
 
 .stats {
   font-size: 2.3em;
+  font-family: 'Palanquin Dark', sans-serif;
 }
 
 .back-photo {
@@ -36,15 +37,44 @@ img {
   max-width: 14em;
 }
 
+.btn {
+  font-family: 'Palanquin Dark', sans-serif;
+  font-size: 1.3em;
+  text-shadow: 0px 0px 4px black;
+  color: white;
+}
+
+.btn:hover {
+  font-family: 'Palanquin Dark', sans-serif;
+  font-size: 1.3em;
+  text-shadow: -1px 1px 2px black;
+  color: white;
+}
+
 .attack-btn {
-  background-color: #f6f291;
+  background-color: #d6c94f;
+}
+
+.attack-btn:hover {
+  background-color: #a59a3b;
 }
 
 .mod-btn {
   background-color: #71cbf1;
 }
 
+.mod-btn:hover {
+  background-color: #5697b3;
+}
+
+.mod-btn:target {
+  background-color: #38b7ee;
+}
 
 .reset-btn {
   background-color: #ff0000;
+}
+
+.reset-btn:hover {
+  background-color: #9c0000;
 }

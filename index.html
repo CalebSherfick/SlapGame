@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Palanquin+Dark:500" rel="stylesheet">
 	<link rel="stylesheet" href="assets/game.css">
 	<title>Slap Object Game</title>
 </head>
@@ -23,7 +24,7 @@
 			</div>
 		</section>
 
-		<section class="row target-area py-5">
+		<section class="row target-area pt-5">
 			<div class="offset-md-3 col-md-4 d-flex justify-content-end">
 				<img src="./assets/Tom.png" alt="Tom the Cat" class='target'>
 			</div>
@@ -44,45 +45,45 @@
 		</section>
 
 		<section class="row">
-			<div class="col-md-12 d-flex justify-content-center align-items-center pb-3">
+			<div class="col-md-12 d-flex justify-content-center align-items-center pt-4">
 				<h3 class="words">Attacks</h3>
 			</div>
 		</section>
 
-		<footer class="row btn-area justify-content-center align-items-center">
-			<div class="col-md-3 d-flex justify-content-center align-items-center">
-				<button type="button" class="btn attack-btn shadow-sm w-100" onclick="slap()">SLAP</button>
+		<footer class="row btn-area justify-content-center align-items-center pt-2">
+			<div class="col-md-4 d-flex justify-content-center align-items-center">
+				<button type="button" class="btn attack-btn shadow-sm w-100" onclick="slap()">SLAP (-1)</button>
 			</div>
-			<div class="col-md-3 d-flex justify-content-center align-items-center">
-				<button type="button" class="btn attack-btn shadow-sm w-100" onclick="punch()">PUNCH</button>
+			<div class="col-md-4 d-flex justify-content-center align-items-center">
+				<button type="button" class="btn attack-btn shadow-sm w-100" onclick="punch()">PUNCH (-5)</button>
 			</div>
-			<div class="col-md-3 d-flex justify-content-center align-items-center">
-				<button type="button" class="btn attack-btn shadow-sm w-100" onclick="kick()">KICK</button>
+			<div class="col-md-4 d-flex justify-content-center align-items-center">
+				<button type="button" class="btn attack-btn shadow-sm w-100" onclick="kick()">KICK (-10)</button>
 			</div>
 		</footer>
 
 		<section class="row">
-			<div class="col-md-12 d-flex justify-content-center align-items-center pt-3	 pb-2">
+			<div class="col-md-12 d-flex justify-content-center align-items-center pt-4	 pb-2">
 				<h3 class="words">Modifiers</h3>
 			</div>
 		</section>
 
 		<section class="row btn-area justify-content-center align-items-center">
-			<div class="col-md-2 d-flex justify-content-center align-items-center">
-				<button type="button" class="btn mod-btn shadow-sm w-100" onclick="giveGlove()">GLOVE</button>
+			<div class="col-md-3 d-flex justify-content-center align-items-center">
+				<button type="button" class="btn mod-btn shadow-sm w-100" onclick="giveGlove()">GLOVE (2x)</button>
 			</div>
-			<div class="col-md-2 d-flex justify-content-center align-items-center">
+			<div class="col-md-3 d-flex justify-content-center align-items-center">
 				<button type="button" class="btn mod-btn shadow-sm w-100" onclick="giveKnuckles()">BRASS
-					KNUCKLES</button>
+					KNUCKLES (3x)</button>
 			</div>
-			<div class="col-md-2 d-flex justify-content-center align-items-center">
+			<div class="col-md-3 d-flex justify-content-center align-items-center">
 				<button type="button" class="btn mod-btn shadow-sm w-100" onclick="giveBoot()">STEELTOED
-					BOOTS</button>
+					BOOTS (5x)</button>
 			</div>
 		</section>
 
 		<section class="row btn-area justify-content-center align-items-center">
-			<div class="col-md-2 d-flex justify-content-center align-items-center pt-3">
+			<div class="col-md-4 d-flex justify-content-center align-items-center pt-3">
 				<button type="button" class="btn reset-btn shadow-sm w-100" onclick="remove()">REMOVE WEAPON</button>
 			</div>
 		</section>
